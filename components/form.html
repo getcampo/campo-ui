@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Form - Campo UI</title>
+    <link rel="stylesheet" href="/css/campo-ui.css">
+    <link rel="stylesheet" href="/theme.css">
+    <script src="https://unpkg.com/stimulus/dist/stimulus.umd.js"></script>
+    <script src="/js/campo-ui.js"></script>
+    <script>
+      CampoUI.init()
+    </script>
+  <meta name="generator" content="Hexo 4.2.0"></head>
+  <body class="app">
+    <div class="app-bar-wrapper">
+      <div class="app-bar app-bar-primary">
+        <div class="toolbar toolbar-fixed toolbar-white">
+          <div class="toolbar__action disabled-on-desktop">
+            <button type="button" class="button button--icon" data-controller="toggle" data-toggle-target="#drawer" data-toggle-action="drawer#toggle">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+            </button>
+          </div>
+          <div class="toolbar__title">
+            <a href="/">Campo UI</a>
+          </div>
+        </div>
+      </div>
+      <div class="app-bar-wrapper__content">
+        <div class="drawer-wrapper">
+          <nav id="drawer" class="drawer" data-controller="drawer" data-drawer-persistence="true">
+            <div class="drawer__container">
+              <div class="drawer__body">
+                <div class="drawer__menu">
+                  
+                    
+                    <a href="/introduction.html" class="drawer__item ">
+                      Introduction
+                    </a>
+                  
+                    
+                    <a href="/webpack.html" class="drawer__item ">
+                      Webpack
+                    </a>
+                  
+                    
+                    <a href="/rails.html" class="drawer__item ">
+                      Rails
+                    </a>
+                  
+                </div>
+                <hr class="divider">
+                <h3 class="subheader">Components</h3>
+                <div class="drawer__menu">
+                  
+                    
+                    <a href="/components/app-bar.html" class="drawer__item ">
+                      App Bar
+                    </a>
+                  
+                    
+                    <a href="/components/button.html" class="drawer__item ">
+                      Button
+                    </a>
+                  
+                    
+                    <a href="/components/card.html" class="drawer__item ">
+                      Card
+                    </a>
+                  
+                    
+                    <a href="/components/chip.html" class="drawer__item ">
+                      Chip
+                    </a>
+                  
+                    
+                    <a href="/components/dialog.html" class="drawer__item ">
+                      Dialog
+                    </a>
+                  
+                    
+                    <a href="/components/drawer.html" class="drawer__item ">
+                      Drawer
+                    </a>
+                  
+                    
+                    <a href="/components/dropdown.html" class="drawer__item ">
+                      Dropdown
+                    </a>
+                  
+                    
+                    <a href="/components/floating-action.html" class="drawer__item ">
+                      Floating Action
+                    </a>
+                  
+                    
+                    <a href="/components/text-field.html" class="drawer__item ">
+                      Text Field
+                    </a>
+                  
+                    
+                    <a href="/components/selection-control.html" class="drawer__item ">
+                      Selection Control
+                    </a>
+                  
+                    
+                    <a href="/components/selector.html" class="drawer__item ">
+                      Selector
+                    </a>
+                  
+                    
+                    <a href="/components/form.html" class="drawer__item drawer__item--active">
+                      Form
+                    </a>
+                  
+                    
+                    <a href="/components/list.html" class="drawer__item ">
+                      List
+                    </a>
+                  
+                    
+                    <a href="/components/snackbar.html" class="drawer__item ">
+                      Snackbar
+                    </a>
+                  
+                    
+                    <a href="/components/sheet.html" class="drawer__item ">
+                      Sheet
+                    </a>
+                  
+                    
+                    <a href="/components/table.html" class="drawer__item ">
+                      Table
+                    </a>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="drawer__scrim" data-action="click->drawer#close">
+            </div>
+          </nav>
+          <div class="drawer-wrapper__content">
+            <div class="app-content padding">
+              <h1 id="Form"><a href="#Form" class="headerlink" title="Form"></a>Form</h1>
+    <div class="example ">
+      <form class="form">
+  <div class="form__field">
+    <div class="text-field text-field--filled">
+      <div class="text-field__container">
+        <input type="text" name="" value="" placeholder=" ">
+        <label class="text-field__label">Text Field</label>
+      </div>
+    </div>
+  </div>
+  <div class="form__row">
+    <div class="form__field">
+      <div class="text-field text-field--filled">
+        <div class="text-field__container">
+          <input type="text" name="" value="" placeholder=" ">
+          <label class="text-field__label">Text Field</label>
+        </div>
+      </div>
+    </div>
+    <div class="form__field">
+      <div class="text-field text-field--filled">
+        <div class="text-field__container">
+          <input type="text" name="" value="" placeholder=" ">
+          <label class="text-field__label">Text Field</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form__field">
+    <div class="text-field text-field--filled">
+      <div class="text-field__container">
+        <textarea name="name" rows="8" cols="80" placeholder=" "></textarea>
+        <label class="text-field__label">Text Field</label>
+      </div>
+    </div>
+  </div>
+  <div class="form__field">
+    <label class="form__label">Checkbox</label>
+    <div class="form__control">
+      <label class="checkbox">
+        <input type="checkbox" id="checkbox_1" name="" value="">
+        <div class="checkbox__icon">
+          <svg viewBox="0 0 24 24">
+            <path fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+          </svg>
+        </div>
+      </label>
+      <label for="checkbox_1" class="form__control__label">item 1</label>
+    </div>
+    <div class="form__control">
+      <label class="checkbox">
+        <input type="checkbox" id="checkbox_2" name="" value="">
+        <div class="checkbox__icon">
+          <svg viewBox="0 0 24 24">
+            <path fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+          </svg>
+        </div>
+      </label>
+      <label for="checkbox_2" class="form__control__label">item 2</label>
+    </div>
+  </div>
+  <div class="form__field">
+    <label class="form__label">Radio</label>
+    <div class="form__control">
+      <label class="radio">
+        <input type="radio" id="radio_1" name="radio_group" value="">
+        <div class="radio__icon">
+        </div>
+      </label>
+      <label for="radio_1" class="form__control__label">item 1</label>
+    </div>
+    <div class="form__control">
+      <label class="radio">
+        <input type="radio" id="radio_2" name="radio_group" value="">
+        <div class="radio__icon">
+        </div>
+      </label>
+      <label for="radio_2" class="form__control__label">item 2</label>
+    </div>
+  </div>
+  <div class="form__field">
+    <label class="form__label">Switch</label>
+    <div class="form__control">
+      <label class="form__control__label" for="switch_1">Switch</label>
+      <label class="switch">
+        <input id="switch_1" type="checkbox" name="" value="">
+        <div class="switch__track">
+        </div>
+        <div class="switch__thumb">
+        </div>
+      </label>
+    </div>
+  </div>
+  <button type="submit" name="button" class="button button--contained button--primary">Submit</button>
+</form>
+    </div>
+    <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__field"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-field text-field--filled"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-field__container"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">""</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">" "</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-field__label"</span>&gt;</span>Text Field<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__field"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-field text-field--filled"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-field__container"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">""</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">" "</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-field__label"</span>&gt;</span>Text Field<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__field"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-field text-field--filled"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-field__container"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">""</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">" "</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-field__label"</span>&gt;</span>Text Field<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__field"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-field text-field--filled"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-field__container"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"name"</span> <span class="hljs-attr">rows</span>=<span class="hljs-string">"8"</span> <span class="hljs-attr">cols</span>=<span class="hljs-string">"80"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">" "</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-field__label"</span>&gt;</span>Text Field<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__field"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__label"</span>&gt;</span>Checkbox<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__control"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"checkbox"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"checkbox_1"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">""</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"checkbox__icon"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 24 24"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M1.73,12.91 8.1,19.28 22.79,4.59"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"checkbox_1"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__control__label"</span>&gt;</span>item 1<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__control"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"checkbox"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"checkbox_2"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">""</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"checkbox__icon"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 24 24"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M1.73,12.91 8.1,19.28 22.79,4.59"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"checkbox_2"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__control__label"</span>&gt;</span>item 2<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__field"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__label"</span>&gt;</span>Radio<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__control"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"radio"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"radio_1"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"radio_group"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"radio__icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"radio_1"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__control__label"</span>&gt;</span>item 1<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__control"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"radio"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"radio_2"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"radio_group"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"radio__icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"radio_2"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__control__label"</span>&gt;</span>item 2<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__field"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__label"</span>&gt;</span>Switch<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__control"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__control__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"switch_1"</span>&gt;</span>Switch<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"switch"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"switch_1"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">""</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"switch__track"</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"switch__thumb"</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button button--contained button--primary"</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span></code></pre>
+  
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

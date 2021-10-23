@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Dropdown - Campo UI</title>
+    <link rel="stylesheet" href="/css/campo-ui.css">
+    <link rel="stylesheet" href="/theme.css">
+    <script src="https://unpkg.com/stimulus/dist/stimulus.umd.js"></script>
+    <script src="/js/campo-ui.js"></script>
+    <script>
+      CampoUI.init()
+    </script>
+  <meta name="generator" content="Hexo 4.2.0"></head>
+  <body class="app">
+    <div class="app-bar-wrapper">
+      <div class="app-bar app-bar-primary">
+        <div class="toolbar toolbar-fixed toolbar-white">
+          <div class="toolbar__action disabled-on-desktop">
+            <button type="button" class="button button--icon" data-controller="toggle" data-toggle-target="#drawer" data-toggle-action="drawer#toggle">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+            </button>
+          </div>
+          <div class="toolbar__title">
+            <a href="/">Campo UI</a>
+          </div>
+        </div>
+      </div>
+      <div class="app-bar-wrapper__content">
+        <div class="drawer-wrapper">
+          <nav id="drawer" class="drawer" data-controller="drawer" data-drawer-persistence="true">
+            <div class="drawer__container">
+              <div class="drawer__body">
+                <div class="drawer__menu">
+                  
+                    
+                    <a href="/introduction.html" class="drawer__item ">
+                      Introduction
+                    </a>
+                  
+                    
+                    <a href="/webpack.html" class="drawer__item ">
+                      Webpack
+                    </a>
+                  
+                    
+                    <a href="/rails.html" class="drawer__item ">
+                      Rails
+                    </a>
+                  
+                </div>
+                <hr class="divider">
+                <h3 class="subheader">Components</h3>
+                <div class="drawer__menu">
+                  
+                    
+                    <a href="/components/app-bar.html" class="drawer__item ">
+                      App Bar
+                    </a>
+                  
+                    
+                    <a href="/components/button.html" class="drawer__item ">
+                      Button
+                    </a>
+                  
+                    
+                    <a href="/components/card.html" class="drawer__item ">
+                      Card
+                    </a>
+                  
+                    
+                    <a href="/components/chip.html" class="drawer__item ">
+                      Chip
+                    </a>
+                  
+                    
+                    <a href="/components/dialog.html" class="drawer__item ">
+                      Dialog
+                    </a>
+                  
+                    
+                    <a href="/components/drawer.html" class="drawer__item ">
+                      Drawer
+                    </a>
+                  
+                    
+                    <a href="/components/dropdown.html" class="drawer__item drawer__item--active">
+                      Dropdown
+                    </a>
+                  
+                    
+                    <a href="/components/floating-action.html" class="drawer__item ">
+                      Floating Action
+                    </a>
+                  
+                    
+                    <a href="/components/text-field.html" class="drawer__item ">
+                      Text Field
+                    </a>
+                  
+                    
+                    <a href="/components/selection-control.html" class="drawer__item ">
+                      Selection Control
+                    </a>
+                  
+                    
+                    <a href="/components/selector.html" class="drawer__item ">
+                      Selector
+                    </a>
+                  
+                    
+                    <a href="/components/form.html" class="drawer__item ">
+                      Form
+                    </a>
+                  
+                    
+                    <a href="/components/list.html" class="drawer__item ">
+                      List
+                    </a>
+                  
+                    
+                    <a href="/components/snackbar.html" class="drawer__item ">
+                      Snackbar
+                    </a>
+                  
+                    
+                    <a href="/components/sheet.html" class="drawer__item ">
+                      Sheet
+                    </a>
+                  
+                    
+                    <a href="/components/table.html" class="drawer__item ">
+                      Table
+                    </a>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="drawer__scrim" data-action="click->drawer#close">
+            </div>
+          </nav>
+          <div class="drawer-wrapper__content">
+            <div class="app-content padding">
+              <h1 id="Dropdown"><a href="#Dropdown" class="headerlink" title="Dropdown"></a>Dropdown</h1><h2 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h2>
+    <div class="example ">
+      <div class="dropdown" data-controller="dropdown">
+  <button type="button" class="button button--text" data-action="dropdown#toggle">Dropdown button</button>
+  <div class="dropdown__menu">
+    <a class="dropdown__item" href="#">
+      <div class="dropdown__item__icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M18 13h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H6c-.55 0-1-.45-1-1s.45-1 1-1h5V6c0-.55.45-1 1-1s1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1z"/></svg>
+      </div>
+      <div class="dropdown__item__text">
+        item
+      </div>
+    </a>
+    <form action="index.html" method="post">
+      <button type="submit" class="dropdown__item">
+        <div class="dropdown__item__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M18 13h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H6c-.55 0-1-.45-1-1s.45-1 1-1h5V6c0-.55.45-1 1-1s1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1z"/></svg>
+        </div>
+        <div class="dropdown__item__text">
+          item
+        </div>
+      </button>
+    </form>
+  </div>
+</div>
+    </div>
+    <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown"</span> <span class="hljs-attr">data-controller</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button button--text"</span> <span class="hljs-attr">data-action</span>=<span class="hljs-string">"dropdown#toggle"</span>&gt;</span>Dropdown button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__menu"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__item__icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 24 24"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M0 0h24v24H0V0z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span>/&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M18 13h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H6c-.55 0-1-.45-1-1s.45-1 1-1h5V6c0-.55.45-1 1-1s1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1z"</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__item__text"</span>&gt;</span>
+        item
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">"index.html"</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"post"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__item"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__item__icon"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 24 24"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M0 0h24v24H0V0z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span>/&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M18 13h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H6c-.55 0-1-.45-1-1s.45-1 1-1h5V6c0-.55.45-1 1-1s1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1z"</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__item__text"</span>&gt;</span>
+          item
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+  
+
+<h2 id="Placement"><a href="#Placement" class="headerlink" title="Placement"></a>Placement</h2>
+    <div class="example ">
+      <div class="dropdown" data-controller="dropdown">
+  <button type="button" class="button button--text" data-action="dropdown#toggle">Dropdown button</button>
+  <div class="dropdown__menu">
+    <a class="dropdown__item" href="#">Dropdown item</a>
+    <a class="dropdown__item" href="#">Dropdown item</a>
+    <a class="dropdown__item" href="#">Dropdown item</a>
+  </div>
+</div>
+<div class="dropdown" data-controller="dropdown">
+  <button type="button" class="button button--text" data-action="dropdown#toggle">Menu top right</button>
+  <div class="dropdown__menu dropdown__menu--top-right">
+    <a class="dropdown__item" href="#">Dropdown item</a>
+    <a class="dropdown__item" href="#">Dropdown item</a>
+    <a class="dropdown__item" href="#">Dropdown item</a>
+  </div>
+</div>
+<div class="dropdown" data-controller="dropdown">
+  <button type="button" class="button button--text" data-action="dropdown#toggle">Menu buttom left</button>
+  <div class="dropdown__menu dropdown__menu--bottom-left">
+    <a class="dropdown__item" href="#">Dropdown item</a>
+    <a class="dropdown__item" href="#">Dropdown item</a>
+    <a class="dropdown__item" href="#">Dropdown item</a>
+  </div>
+</div>
+<div class="dropdown" data-controller="dropdown">
+  <button type="button" class="button button--text" data-action="dropdown#toggle">Menu align bottom right</button>
+  <div class="dropdown__menu dropdown__menu--bottom-right">
+    <a class="dropdown__item" href="#">Dropdown item</a>
+    <a class="dropdown__item" href="#">Dropdown item</a>
+    <a class="dropdown__item" href="#">Dropdown item</a>
+  </div>
+</div>
+    </div>
+    <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown"</span> <span class="hljs-attr">data-controller</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button button--text"</span> <span class="hljs-attr">data-action</span>=<span class="hljs-string">"dropdown#toggle"</span>&gt;</span>Dropdown button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__menu"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Dropdown item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Dropdown item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Dropdown item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown"</span> <span class="hljs-attr">data-controller</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button button--text"</span> <span class="hljs-attr">data-action</span>=<span class="hljs-string">"dropdown#toggle"</span>&gt;</span>Menu top right<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__menu dropdown__menu--top-right"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Dropdown item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Dropdown item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Dropdown item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown"</span> <span class="hljs-attr">data-controller</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button button--text"</span> <span class="hljs-attr">data-action</span>=<span class="hljs-string">"dropdown#toggle"</span>&gt;</span>Menu buttom left<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__menu dropdown__menu--bottom-left"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Dropdown item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Dropdown item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Dropdown item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown"</span> <span class="hljs-attr">data-controller</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button button--text"</span> <span class="hljs-attr">data-action</span>=<span class="hljs-string">"dropdown#toggle"</span>&gt;</span>Menu align bottom right<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__menu dropdown__menu--bottom-right"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Dropdown item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Dropdown item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Dropdown item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+  
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

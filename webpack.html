@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Webpack - Campo UI</title>
+    <link rel="stylesheet" href="/css/campo-ui.css">
+    <link rel="stylesheet" href="/theme.css">
+    <script src="https://unpkg.com/stimulus/dist/stimulus.umd.js"></script>
+    <script src="/js/campo-ui.js"></script>
+    <script>
+      CampoUI.init()
+    </script>
+  <meta name="generator" content="Hexo 4.2.0"></head>
+  <body class="app">
+    <div class="app-bar-wrapper">
+      <div class="app-bar app-bar-primary">
+        <div class="toolbar toolbar-fixed toolbar-white">
+          <div class="toolbar__action disabled-on-desktop">
+            <button type="button" class="button button--icon" data-controller="toggle" data-toggle-target="#drawer" data-toggle-action="drawer#toggle">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+            </button>
+          </div>
+          <div class="toolbar__title">
+            <a href="/">Campo UI</a>
+          </div>
+        </div>
+      </div>
+      <div class="app-bar-wrapper__content">
+        <div class="drawer-wrapper">
+          <nav id="drawer" class="drawer" data-controller="drawer" data-drawer-persistence="true">
+            <div class="drawer__container">
+              <div class="drawer__body">
+                <div class="drawer__menu">
+                  
+                    
+                    <a href="/introduction.html" class="drawer__item ">
+                      Introduction
+                    </a>
+                  
+                    
+                    <a href="/webpack.html" class="drawer__item drawer__item--active">
+                      Webpack
+                    </a>
+                  
+                    
+                    <a href="/rails.html" class="drawer__item ">
+                      Rails
+                    </a>
+                  
+                </div>
+                <hr class="divider">
+                <h3 class="subheader">Components</h3>
+                <div class="drawer__menu">
+                  
+                    
+                    <a href="/components/app-bar.html" class="drawer__item ">
+                      App Bar
+                    </a>
+                  
+                    
+                    <a href="/components/button.html" class="drawer__item ">
+                      Button
+                    </a>
+                  
+                    
+                    <a href="/components/card.html" class="drawer__item ">
+                      Card
+                    </a>
+                  
+                    
+                    <a href="/components/chip.html" class="drawer__item ">
+                      Chip
+                    </a>
+                  
+                    
+                    <a href="/components/dialog.html" class="drawer__item ">
+                      Dialog
+                    </a>
+                  
+                    
+                    <a href="/components/drawer.html" class="drawer__item ">
+                      Drawer
+                    </a>
+                  
+                    
+                    <a href="/components/dropdown.html" class="drawer__item ">
+                      Dropdown
+                    </a>
+                  
+                    
+                    <a href="/components/floating-action.html" class="drawer__item ">
+                      Floating Action
+                    </a>
+                  
+                    
+                    <a href="/components/text-field.html" class="drawer__item ">
+                      Text Field
+                    </a>
+                  
+                    
+                    <a href="/components/selection-control.html" class="drawer__item ">
+                      Selection Control
+                    </a>
+                  
+                    
+                    <a href="/components/selector.html" class="drawer__item ">
+                      Selector
+                    </a>
+                  
+                    
+                    <a href="/components/form.html" class="drawer__item ">
+                      Form
+                    </a>
+                  
+                    
+                    <a href="/components/list.html" class="drawer__item ">
+                      List
+                    </a>
+                  
+                    
+                    <a href="/components/snackbar.html" class="drawer__item ">
+                      Snackbar
+                    </a>
+                  
+                    
+                    <a href="/components/sheet.html" class="drawer__item ">
+                      Sheet
+                    </a>
+                  
+                    
+                    <a href="/components/table.html" class="drawer__item ">
+                      Table
+                    </a>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="drawer__scrim" data-action="click->drawer#close">
+            </div>
+          </nav>
+          <div class="drawer-wrapper__content">
+            <div class="app-content padding">
+              <h1 id="Webpack"><a href="#Webpack" class="headerlink" title="Webpack"></a>Webpack</h1><p>Learn how to include Campo UI in your project using Webpack.</p>
+<h2 id="Install-NPM-package"><a href="#Install-NPM-package" class="headerlink" title="Install NPM package"></a>Install NPM package</h2><pre><code class="hljs console"><span class="hljs-meta">$</span><span class="bash"> npm install campo-ui</span></code></pre>
+
+<p>or</p>
+<pre><code class="hljs console"><span class="hljs-meta">$</span><span class="bash"> yarn add campo-ui</span></code></pre>
+
+<h2 id="Config"><a href="#Config" class="headerlink" title="Config"></a>Config</h2><p>Add this content to webpack config:</p>
+<pre><code class="hljs javascript"><span class="hljs-built_in">module</span>: &#123;
+  rules: [
+    &#123;
+      test: <span class="hljs-regexp">/\.css$/</span>,
+      use: [<span class="hljs-string">'style-loader'</span>, <span class="hljs-string">'css-loader'</span>]
+    &#125;
+  ]
+&#125;</code></pre>
+
+<p>It enabled webpack to process css.</p>
+<h2 id="Import-CSS"><a href="#Import-CSS" class="headerlink" title="Import CSS"></a>Import CSS</h2><p>Then add this content to entry file:</p>
+<pre><code class="hljs javascript"><span class="hljs-keyword">import</span> <span class="hljs-string">'campo-ui/dist/css/campo-ui.css'</span></code></pre>
+
+<h2 id="Import-JavaScript"><a href="#Import-JavaScript" class="headerlink" title="Import JavaScript"></a>Import JavaScript</h2><p>Then add this content to entry file:</p>
+<pre><code class="hljs javascript"><span class="hljs-keyword">import</span> <span class="hljs-string">'campo-ui/dist/js/campo-ui.bundle.js'</span></code></pre>
+
+<p>If you are using stimulus, use this content to get stimlus application:</p>
+<pre><code class="hljs javascript"><span class="hljs-comment">// required stimulus installed</span>
+<span class="hljs-keyword">import</span> &#123; definitionsFromContext &#125; <span class="hljs-keyword">from</span> <span class="hljs-string">"stimulus/webpack-helpers"</span>
+<span class="hljs-keyword">import</span> &#123; application &#125; <span class="hljs-keyword">from</span> <span class="hljs-string">'campo-ui/dist/js/campo-ui.js'</span>
+
+<span class="hljs-keyword">const</span> context = <span class="hljs-built_in">require</span>.context(<span class="hljs-string">"./controllers"</span>, <span class="hljs-literal">true</span>, /\.js$/)
+application.load(definitionsFromContext(context))</code></pre>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
